@@ -1,7 +1,14 @@
-class Student < User
+require 'pry'
+class Student < User 
 
-    def learn("")
-        knowledge << input
+    attr_accessor :knowledge
+
+    def initialize
+        @knowledge = []
+    end
+
+    def learn(string)
+        knowledge << string
     end
 
 end
